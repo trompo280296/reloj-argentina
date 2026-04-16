@@ -1,167 +1,347 @@
-Reloj Económico Argentina
-Indicadores macroeconómicos · 2025–2026
-
-Tiempo real
-Periódico
-01:15:17
-↺ Actualizar
-✓ Actualizado · 16/4/2026, 01:15:08
-Tipo de cambio
-Dólar MEP
-VIVO
-$1.400
-Dólar bolsa · referencia inversora
-Al que puede acceder cualquier persona física legalmente. El más relevante para inversiones.
-dolarapi.com
-Cotizaciones
-VIVO
-MEP
-$1.400
-Blue
-$1.415
-Oficial
-$1.380
-CCL
-$1.448
-dolarapi.com
-Brecha Blue / Oficial
-VIVO
-2.5%
-Blue vs. Oficial
-0%
-Alerta: 30%+
-Alta brecha = presión sobre reservas y desconfianza en el tipo de cambio oficial.
-Cálculo sobre dolarapi.com
-Precios & Actividad
-Reservas BCRA
-VIVO
-Sin datos
-Reservas brutas internacionales
-Por debajo de USD 20.000 M el sistema se tensiona. Son el respaldo del peso frente al dólar.
-estadisticasbcra.com
-Inflación mensual IPC · INDEC
-HISTÓRICO
-3,4%
-Marzo 2026 · último dato
-Acum. 2026: 9,4% Acum. 2025: 31,5%
-Ago 25
-1.9%
-Sep 25
-2.1%
-Oct 25
-2.3%
-Nov 25
-2.5%
-Dic 25
-2.8%
-Ene 26
-2.9%
-Feb 26
-2.9%
-Mar 26
-3.4%
-INDEC · Datos verificados hasta Marzo 2026
-Actividad Económica EMAE
-MENSUAL
-+3,5%
-Diciembre 2025 · variación interanual
-Año 2025 completo
-+4,4%
-Agricultura
-+32,2%
-Industria manufacturera
--3,9%
-Intermediación financiera
-+14,1%
-INDEC · Feb 2026
-Resultado Fiscal
-ANUAL
-+0,3% PBI
-Superávit financiero 2024
-Primero desde 2010
-Superávit primario
-+1,8% PBI
-Recaudación
-~35% PBI
-Gasto público
-~35% PBI
-Intereses deuda
-~3% PBI
-Ministerio de Economía · 2024
-Pobreza
-SEMESTRAL
-~38%
-Personas bajo línea de pobreza · 2S 2024
-0%
-100%
-Pico de 52% en 1S 2024. Recuperación parcial en 2S 2024. Aproximadamente 18 millones de personas.
-INDEC · 2S 2024
-Deuda Pública
-Deuda Pública Total
-TRIMESTRAL
-USD 465.353 M
-76,3% del PBI · Junio 2025
-En dólares (no emitible)
-~55%
-En pesos (emitible)
-~45%
-Con FMI
-~USD 44.000 M
-Defaults históricos
-9 veces
-Deuda/PBI: 76%
-Referencia crítica: 60%
-Secretaría de Finanzas · Jun 2025
-La Trampa de la Deuda en Dólares
-Recaudación anual estimada
-~USD 220.000 M
-Deuda total
-~USD 465.000 M
-Años de recaudación para cancelar
-~2,1 años
-Deuda en moneda extranjera
-55% del total
-A diferencia de EEUU, Argentina debe en una moneda que no puede emitir. Cuando no puede pagar en dólares, no infla — defaultea. Por eso el 55% en moneda extranjera es el dato más crítico.
-Elaboración propia sobre datos oficiales
-Empleo & Pasivos Estructurales
-Estructura del Empleo
-TRIMESTRAL
-~45%
-Trabajadores en blanco sobre total
-En blanco (aportan)
-~45%
-En negro (no aportan)
-~35%
-Planes sociales
-~20%
-Solo 45 de cada 100 trabajadores financian jubilaciones, salud y planes del resto. Base contributiva críticamente estrecha.
-INDEC EPH · 2024
-Sistema Previsional
-MENSUAL
-7,2 M
-Jubilados y pensionados
-Gasto previsional / PBI
-~11%
-Accedieron por moratoria
-~40%
-Activos por jubilado
-1,7 : 1
-En los años 50 era 16:1. Hoy 1,7 activos por jubilado, muchos sin aportes suficientes.
-ANSES · 2024
-Dependencia del Estado
-MENSUAL
-~18 M
-Beneficiarios de transferencias sociales
-~40% de la población
-Casi el 40% recibe algún plan, asignación o subsidio. Políticamente intocable, estructuralmente insostenible. Es el pasivo oculto más difícil de reducir.
-Ministerio de Capital Humano · 2024
-Diagnóstico
-El problema central
-El Estado prometió más de lo que puede financiar. Jubilaciones, salud y planes crecen más rápido que la base contributiva que los sostiene.
-La señal positiva
-Superávit fiscal por primera vez en 14 años y actividad creciendo +4,4% en 2025. El sangrado paró, pero la deuda y los pasivos estructurales siguen.
-El riesgo de fondo
-55% de la deuda está en dólares que Argentina no puede emitir. Si pierde acceso al crédito, la única salida es default. Ya pasó 9 veces.
-Implicancia inversora
-Activos que no dependen del Estado — campo, commodities, activos dolarizados — son el refugio lógico en este contexto estructural.
-Reloj Económico Argentina · Tipo de cambio y reservas en tiempo real · Resto de datos: INDEC, Secretaría de Finanzas, Ministerio de Economía
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reloj Económico Argentina</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f4f0;
+    --surface: #ffffff;
+    --border: #e2e0d8;
+    --text-primary: #1a1916;
+    --text-secondary: #6b6860;
+    --text-muted: #a8a49a;
+    --green: #1a7a4a;
+    --green-bg: #edf7f2;
+    --red: #c0392b;
+    --red-bg: #fdf0ef;
+    --amber: #b45309;
+    --amber-bg: #fef9ee;
+    --mono: 'DM Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text-primary); min-height: 100vh; padding: 20px; }
+  .header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
+  .header h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.5px; }
+  .header p { font-size: 13px; color: var(--text-secondary); margin-top: 4px; }
+  .header-right { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .legend { display: flex; gap: 14px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-secondary); font-family: var(--mono); }
+  .dot { width: 7px; height: 7px; border-radius: 50%; }
+  .dot-green { background: var(--green); animation: pulse 2s infinite; }
+  .dot-gray { background: #999; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+  .clock-box { font-family: var(--mono); font-size: 11px; color: var(--text-muted); background: var(--surface); border: 1px solid var(--border); padding: 5px 10px; border-radius: 6px; }
+  .refresh-btn { font-family: var(--mono); font-size: 11px; color: var(--surface); background: var(--text-primary); border: none; padding: 6px 14px; border-radius: 6px; cursor: pointer; }
+  .refresh-btn:hover { opacity: .8; }
+  .refresh-btn:disabled { opacity: .4; cursor: not-allowed; }
+  .grid { display: grid; gap: 12px; }
+  .g3 { grid-template-columns: repeat(3, 1fr); }
+  .g2 { grid-template-columns: repeat(2, 1fr); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; position: relative; overflow: hidden; }
+  .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; border-radius: 10px 10px 0 0; }
+  .card.live::before { background: var(--green); }
+  .card.static::before { background: #ccc; }
+  .card.danger::before { background: var(--red); }
+  .card.warning::before { background: var(--amber); }
+  .card.positive::before { background: var(--green); }
+  .card.dark { background: var(--text-primary); border-color: var(--text-primary); }
+  .card-label { font-size: 10px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .8px; color: var(--text-muted); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+  .badge { font-size: 9px; padding: 2px 6px; border-radius: 3px; font-family: var(--mono); }
+  .badge-live { background: var(--green-bg); color: var(--green); }
+  .badge-static { background: #f0ede8; color: #888; }
+  .val { font-family: var(--mono); font-size: 26px; font-weight: 500; line-height: 1; margin-bottom: 4px; }
+  .val.sm { font-size: 20px; }
+  .val.lg { font-size: 30px; }
+  .sub { font-size: 12px; color: var(--text-secondary); margin-top: 5px; }
+  .explain { font-size: 11px; color: var(--text-muted); margin-top: 8px; line-height: 1.5; }
+  .source { font-size: 10px; color: var(--text-muted); margin-top: 10px; font-family: var(--mono); border-top: 1px solid var(--border); padding-top: 8px; }
+  .source a { color: var(--text-muted); text-decoration: none; }
+  .tag { display: inline-block; font-size: 10px; font-family: var(--mono); padding: 3px 8px; border-radius: 4px; margin-top: 8px; }
+  .tg { background: var(--green-bg); color: var(--green); }
+  .tr { background: var(--red-bg); color: var(--red); }
+  .ta { background: var(--amber-bg); color: var(--amber); }
+  .brow { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+  .brow:last-child { border-bottom: none; }
+  .bl { color: var(--text-secondary); }
+  .bv { font-family: var(--mono); font-weight: 500; }
+  .bv-r { color: var(--red); }
+  .bv-g { color: var(--green); }
+  .bv-a { color: var(--amber); }
+  .pbar { height: 5px; background: var(--border); border-radius: 3px; margin-top: 10px; overflow: hidden; }
+  .pfill { height: 100%; border-radius: 3px; transition: width 1s ease; }
+  .pf-r { background: var(--red); }
+  .pf-a { background: var(--amber); }
+  .pf-g { background: var(--green); }
+  .plbl { display: flex; justify-content: space-between; font-size: 10px; font-family: var(--mono); color: var(--text-muted); margin-top: 4px; }
+  .sec { font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin: 20px 0 12px; display: flex; align-items: center; gap: 8px; }
+  .sec-line { flex: 1; height: 1px; background: var(--border); }
+  .status { display: flex; align-items: center; gap: 8px; font-size: 12px; font-family: var(--mono); padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); margin-bottom: 16px; color: var(--text-secondary); }
+  .status.loading { border-color: var(--amber); color: var(--amber); }
+  .status.done { border-color: var(--green); color: var(--green); }
+  .status.error { border-color: var(--red); color: var(--red); }
+  .skel { display: inline-block; height: .9em; width: 70px; background: var(--border); border-radius: 3px; vertical-align: middle; animation: sk 1s ease infinite alternate; }
+  @keyframes sk { from{opacity:.4} to{opacity:1} }
+  .infl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 10px; }
+  .infl-item { background: var(--bg); border-radius: 6px; padding: 8px; text-align: center; }
+  .infl-mes { font-size: 10px; color: var(--text-muted); font-family: var(--mono); }
+  .infl-val { font-size: 14px; font-weight: 500; font-family: var(--mono); margin-top: 2px; }
+  .infl-bar { height: 3px; border-radius: 2px; margin-top: 4px; }
+  .diag-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+  .dt { font-size: 10px; font-family: var(--mono); color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .dd { font-size: 13px; color: #c8c5be; line-height: 1.6; }
+  .footer { margin-top: 24px; font-size: 11px; color: var(--text-muted); font-family: var(--mono); text-align: center; padding: 12px; border-top: 1px solid var(--border); }
+  @media (max-width: 768px) { .g3 { grid-template-columns: 1fr 1fr; } .g2 { grid-template-columns: 1fr; } .val { font-size: 20px; } .val.lg { font-size: 24px; } .infl-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 480px) { .g3, .g2 { grid-template-columns: 1fr; } .infl-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1>Reloj Económico Argentina</h1>
+    <p>Indicadores macroeconómicos · 2025–2026</p>
+  </div>
+  <div class="header-right">
+    <div class="legend">
+      <div class="legend-item"><div class="dot dot-green"></div>Tiempo real</div>
+      <div class="legend-item"><div class="dot dot-gray"></div>Periódico</div>
+    </div>
+    <div class="clock-box" id="clock">--:--:--</div>
+    <button class="refresh-btn" id="rbtn" onclick="loadAll()">↺ Actualizar</button>
+  </div>
+</div>
+<div class="status" id="statusbar"><span id="statustxt">Cargando datos...</span></div>
+<div class="sec"><span>Tipo de cambio</span><div class="sec-line"></div></div>
+<div class="grid g3">
+  <div class="card live">
+    <div class="card-label">Dólar MEP <span class="badge badge-live">VIVO</span></div>
+    <div class="val" id="mep-v"><span class="skel"></span></div>
+    <div class="sub">Dólar bolsa · referencia inversora</div>
+    <div class="explain">Al que puede acceder cualquier persona física legalmente. El más relevante para inversiones.</div>
+    <div class="source"><a href="https://dolarapi.com" target="_blank">dolarapi.com</a></div>
+  </div>
+  <div class="card live">
+    <div class="card-label">Cotizaciones <span class="badge badge-live">VIVO</span></div>
+    <div class="brow"><span class="bl">MEP</span><span class="bv" id="mep2-v"><span class="skel"></span></span></div>
+    <div class="brow"><span class="bl">Blue</span><span class="bv" id="blue-v"><span class="skel"></span></span></div>
+    <div class="brow"><span class="bl">Oficial</span><span class="bv" id="ofic-v"><span class="skel"></span></span></div>
+    <div class="brow"><span class="bl">CCL</span><span class="bv" id="ccl-v"><span class="skel"></span></span></div>
+    <div class="source"><a href="https://dolarapi.com" target="_blank">dolarapi.com</a></div>
+  </div>
+  <div class="card live">
+    <div class="card-label">Brecha Blue / Oficial <span class="badge badge-live">VIVO</span></div>
+    <div class="val" id="brecha-v"><span class="skel"></span></div>
+    <div class="sub">Blue vs. Oficial</div>
+    <div class="pbar"><div class="pfill pf-a" id="brecha-bar" style="width:0%"></div></div>
+    <div class="plbl"><span>0%</span><span>Alerta: 30%+</span></div>
+    <div class="explain">Alta brecha = presión sobre reservas y desconfianza en el tipo de cambio oficial.</div>
+    <div class="source">Cálculo sobre dolarapi.com</div>
+  </div>
+</div>
+<div class="sec"><span>Precios & Actividad</span><div class="sec-line"></div></div>
+<div class="grid g3">
+  <div class="card live">
+    <div class="card-label">Reservas BCRA <span class="badge badge-live">VIVO</span></div>
+    <div class="val" id="res-v"><span class="skel"></span></div>
+    <div class="sub" id="res-sub">Reservas brutas internacionales</div>
+    <div class="explain">Por debajo de USD 20.000 M el sistema se tensiona. Son el respaldo del peso frente al dólar.</div>
+    <div class="source"><a href="https://estadisticasbcra.com" target="_blank">estadisticasbcra.com</a></div>
+  </div>
+  <div class="card warning" style="grid-column: span 2;">
+    <div class="card-label">Inflación mensual IPC · INDEC <span class="badge badge-static">HISTÓRICO</span></div>
+    <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+      <div>
+        <div class="val sm">3,4%</div>
+        <div class="sub">Marzo 2026 · último dato</div>
+        <div class="tag ta" style="margin-right:4px">Acum. 2026: 9,4%</div>
+        <div class="tag tr">Acum. 2025: 31,5%</div>
+      </div>
+    </div>
+    <div class="infl-grid" id="infl-grid"></div>
+    <div class="source"><a href="https://indec.gob.ar" target="_blank">INDEC</a> · Datos verificados hasta Marzo 2026</div>
+  </div>
+</div>
+<div class="grid g3" style="margin-top:12px;">
+  <div class="card static">
+    <div class="card-label">Actividad Económica EMAE <span class="badge badge-static">MENSUAL</span></div>
+    <div class="val sm">+3,5%</div>
+    <div class="sub">Diciembre 2025 · variación interanual</div>
+    <div class="brow" style="margin-top:8px"><span class="bl">Año 2025 completo</span><span class="bv bv-g">+4,4%</span></div>
+    <div class="brow"><span class="bl">Agricultura</span><span class="bv bv-g">+32,2%</span></div>
+    <div class="brow"><span class="bl">Industria manufacturera</span><span class="bv bv-r">-3,9%</span></div>
+    <div class="brow"><span class="bl">Intermediación financiera</span><span class="bv bv-g">+14,1%</span></div>
+    <div class="source"><a href="https://indec.gob.ar" target="_blank">INDEC</a> · Feb 2026</div>
+  </div>
+  <div class="card positive">
+    <div class="card-label">Resultado Fiscal <span class="badge badge-static">ANUAL</span></div>
+    <div class="val sm">+0,3% PBI</div>
+    <div class="sub">Superávit financiero 2024</div>
+    <div class="tag tg">Primero desde 2010</div>
+    <div class="brow" style="margin-top:10px"><span class="bl">Superávit primario</span><span class="bv bv-g">+1,8% PBI</span></div>
+    <div class="brow"><span class="bl">Recaudación</span><span class="bv">~35% PBI</span></div>
+    <div class="brow"><span class="bl">Gasto público</span><span class="bv">~35% PBI</span></div>
+    <div class="brow"><span class="bl">Intereses deuda</span><span class="bv bv-r">~3% PBI</span></div>
+    <div class="source"><a href="https://argentina.gob.ar" target="_blank">Ministerio de Economía</a> · 2024</div>
+  </div>
+  <div class="card danger">
+    <div class="card-label">Pobreza <span class="badge badge-static">SEMESTRAL</span></div>
+    <div class="val sm">~38%</div>
+    <div class="sub">Personas bajo línea de pobreza · 2S 2024</div>
+    <div class="pbar" style="margin-top:10px"><div class="pfill pf-r" style="width:38%"></div></div>
+    <div class="plbl"><span>0%</span><span>100%</span></div>
+    <div class="explain" style="margin-top:8px">Pico de 52% en 1S 2024. Recuperación parcial en 2S 2024. Aproximadamente 18 millones de personas.</div>
+    <div class="source"><a href="https://indec.gob.ar" target="_blank">INDEC</a> · 2S 2024</div>
+  </div>
+</div>
+<div class="sec"><span>Deuda Pública</span><div class="sec-line"></div></div>
+<div class="grid g2">
+  <div class="card danger">
+    <div class="card-label">Deuda Pública Total <span class="badge badge-static">TRIMESTRAL</span></div>
+    <div class="val lg">USD 465.353 M</div>
+    <div class="sub">76,3% del PBI · Junio 2025</div>
+    <div class="brow" style="margin-top:12px"><span class="bl">En dólares (no emitible)</span><span class="bv bv-r">~55%</span></div>
+    <div class="brow"><span class="bl">En pesos (emitible)</span><span class="bv">~45%</span></div>
+    <div class="brow"><span class="bl">Con FMI</span><span class="bv bv-r">~USD 44.000 M</span></div>
+    <div class="brow"><span class="bl">Defaults históricos</span><span class="bv bv-r">9 veces</span></div>
+    <div class="pbar" style="margin-top:12px"><div class="pfill pf-r" style="width:76%"></div></div>
+    <div class="plbl"><span>Deuda/PBI: 76%</span><span>Referencia crítica: 60%</span></div>
+    <div class="source"><a href="https://argentina.gob.ar/economia/finanzas/deuda-publica" target="_blank">Secretaría de Finanzas</a> · Jun 2025</div>
+  </div>
+  <div class="card danger">
+    <div class="card-label">La Trampa de la Deuda en Dólares</div>
+    <div class="brow"><span class="bl">Recaudación anual estimada</span><span class="bv">~USD 220.000 M</span></div>
+    <div class="brow"><span class="bl">Deuda total</span><span class="bv">~USD 465.000 M</span></div>
+    <div class="brow"><span class="bl">Años para cancelar</span><span class="bv bv-r">~2,1 años</span></div>
+    <div class="brow"><span class="bl">Deuda en moneda extranjera</span><span class="bv bv-r">55% del total</span></div>
+    <div class="explain" style="margin-top:10px">A diferencia de EEUU, Argentina debe en una moneda que no puede emitir. Cuando no puede pagar en dólares, no infla — defaultea. Por eso el 55% en moneda extranjera es el dato más crítico.</div>
+    <div class="source">Elaboración propia sobre datos oficiales</div>
+  </div>
+</div>
+<div class="sec"><span>Empleo & Pasivos Estructurales</span><div class="sec-line"></div></div>
+<div class="grid g3">
+  <div class="card static">
+    <div class="card-label">Estructura del Empleo <span class="badge badge-static">TRIMESTRAL</span></div>
+    <div class="val sm">~45%</div>
+    <div class="sub">Trabajadores en blanco sobre total</div>
+    <div class="brow" style="margin-top:8px"><span class="bl">En blanco (aportan)</span><span class="bv bv-g">~45%</span></div>
+    <div class="brow"><span class="bl">En negro (no aportan)</span><span class="bv bv-a">~35%</span></div>
+    <div class="brow"><span class="bl">Planes sociales</span><span class="bv bv-r">~20%</span></div>
+    <div class="explain" style="margin-top:8px">Solo 45 de cada 100 trabajadores financian jubilaciones, salud y planes del resto.</div>
+    <div class="source"><a href="https://indec.gob.ar" target="_blank">INDEC EPH</a> · 2024</div>
+  </div>
+  <div class="card danger">
+    <div class="card-label">Sistema Previsional <span class="badge badge-static">MENSUAL</span></div>
+    <div class="val sm">7,2 M</div>
+    <div class="sub">Jubilados y pensionados</div>
+    <div class="brow" style="margin-top:8px"><span class="bl">Gasto previsional / PBI</span><span class="bv">~11%</span></div>
+    <div class="brow"><span class="bl">Accedieron por moratoria</span><span class="bv bv-r">~40%</span></div>
+    <div class="brow"><span class="bl">Activos por jubilado</span><span class="bv bv-r">1,7 : 1</span></div>
+    <div class="explain" style="margin-top:8px">En los años 50 era 16:1. Hoy 1,7 activos por jubilado, muchos sin aportes suficientes.</div>
+    <div class="source"><a href="https://anses.gob.ar" target="_blank">ANSES</a> · 2024</div>
+  </div>
+  <div class="card warning">
+    <div class="card-label">Dependencia del Estado <span class="badge badge-static">MENSUAL</span></div>
+    <div class="val sm">~18 M</div>
+    <div class="sub">Beneficiarios de transferencias sociales</div>
+    <div class="tag ta">~40% de la población</div>
+    <div class="explain" style="margin-top:10px">Casi el 40% recibe algún plan, asignación o subsidio. Políticamente intocable, estructuralmente insostenible.</div>
+    <div class="source">Ministerio de Capital Humano · 2024</div>
+  </div>
+</div>
+<div class="sec"><span>Diagnóstico</span><div class="sec-line"></div></div>
+<div class="card dark">
+  <div class="diag-grid">
+    <div><div class="dt">El problema central</div><div class="dd">El Estado prometió más de lo que puede financiar. Jubilaciones, salud y planes crecen más rápido que la base contributiva que los sostiene.</div></div>
+    <div><div class="dt">La señal positiva</div><div class="dd">Superávit fiscal por primera vez en 14 años y actividad creciendo +4,4% en 2025. El sangrado paró, pero la deuda y los pasivos estructurales siguen.</div></div>
+    <div><div class="dt">El riesgo de fondo</div><div class="dd">55% de la deuda está en dólares que Argentina no puede emitir. Si pierde acceso al crédito, la única salida es default. Ya pasó 9 veces.</div></div>
+    <div><div class="dt">Implicancia inversora</div><div class="dd">Activos que no dependen del Estado — campo, commodities, activos dolarizados — son el refugio lógico en este contexto estructural.</div></div>
+  </div>
+</div>
+<div class="footer">Reloj Económico Argentina · Tipo de cambio y reservas en tiempo real · Resto de datos: INDEC, Secretaría de Finanzas, Ministerio de Economía</div>
+<script>
+  setInterval(() => { document.getElementById('clock').textContent = new Date().toLocaleTimeString('es-AR'); }, 1000);
+  const inflData = [
+    {m:'Ene 25',v:2.2},{m:'Feb 25',v:2.4},{m:'Mar 25',v:3.7},{m:'Abr 25',v:2.8},
+    {m:'May 25',v:1.5},{m:'Jun 25',v:1.6},{m:'Jul 25',v:1.9},{m:'Ago 25',v:1.9},
+    {m:'Sep 25',v:2.1},{m:'Oct 25',v:2.3},{m:'Nov 25',v:2.5},{m:'Dic 25',v:2.8},
+    {m:'Ene 26',v:2.9},{m:'Feb 26',v:2.9},{m:'Mar 26',v:3.4}
+  ];
+  function buildInflGrid() {
+    const max = Math.max(...inflData.map(d=>d.v));
+    const last8 = inflData.slice(-8);
+    document.getElementById('infl-grid').innerHTML = last8.map(d => {
+      const w = Math.round((d.v/max)*100);
+      const color = d.v>3?'#c0392b':d.v>2?'#b45309':'#1a7a4a';
+      const isLast = d===last8[last8.length-1];
+      return `<div class="infl-item" style="${isLast?'background:#fef9ee;border:1px solid #b45309;':''}">
+        <div class="infl-mes">${d.m}</div>
+        <div class="infl-val" style="color:${color}">${d.v.toFixed(1)}%</div>
+        <div class="infl-bar" style="background:${color};width:${w}%;"></div>
+      </div>`;
+    }).join('');
+  }
+  function setStatus(type,msg) {
+    document.getElementById('statusbar').className='status '+type;
+    document.getElementById('statustxt').textContent=msg;
+  }
+  function skel(){return '<span class="skel"></span>';}
+  function fmt(v){if(!v&&v!==0)return 'N/D';return '$'+Math.round(v).toLocaleString('es-AR');}
+  async function loadDolares() {
+    const res = await fetch('https://dolarapi.com/v1/dolares');
+    const data = await res.json();
+    let mep,blue,oficial,ccl;
+    data.forEach(d=>{
+      if(d.casa==='bolsa')mep=d;
+      if(d.casa==='blue')blue=d;
+      if(d.casa==='oficial')oficial=d;
+      if(d.casa==='contadoconliqui')ccl=d;
+    });
+    if(mep){document.getElementById('mep-v').textContent=fmt(mep.venta);document.getElementById('mep2-v').textContent=fmt(mep.venta);}
+    if(blue)document.getElementById('blue-v').textContent=fmt(blue.venta);
+    if(oficial)document.getElementById('ofic-v').textContent=fmt(oficial.venta);
+    if(ccl)document.getElementById('ccl-v').textContent=fmt(ccl.venta);
+    if(blue&&oficial&&oficial.venta>0){
+      const brecha=((blue.venta-oficial.venta)/oficial.venta*100).toFixed(1);
+      document.getElementById('brecha-v').textContent=brecha+'%';
+      const w=Math.min(Math.abs(parseFloat(brecha)),100);
+      const bar=document.getElementById('brecha-bar');
+      bar.style.width=w+'%';
+      bar.className='pfill '+(w>50?'pf-r':w>20?'pf-a':'pf-g');
+    }
+  }
+  async function loadReservas() {
+    const res = await fetch('https://api.estadisticasbcra.com/reservas');
+    const data = await res.json();
+    if(data&&data.length>0){
+      const last=data[data.length-1];
+      const v=last.v;
+      const fecha=new Date(last.d).toLocaleDateString('es-AR',{month:'long',year:'numeric'});
+      document.getElementById('res-v').textContent='USD '+(v>=1000?(v/1000).toFixed(1)+' B':v.toLocaleString('es-AR')+' M');
+      document.getElementById('res-sub').textContent='Reservas brutas · '+fecha;
+    }
+  }
+  async function loadAll() {
+    const btn=document.getElementById('rbtn');
+    btn.disabled=true;btn.textContent='↺ Cargando...';
+    ['mep-v','mep2-v','blue-v','ofic-v','ccl-v','brecha-v','res-v'].forEach(id=>{
+      const el=document.getElementById(id);if(el)el.innerHTML=skel();
+    });
+    setStatus('loading','Actualizando cotizaciones y reservas...');
+    try {
+      await Promise.all([
+        loadDolares().catch(e=>{console.error(e);['mep-v','mep2-v','blue-v','ofic-v','ccl-v','brecha-v'].forEach(id=>{document.getElementById(id).textContent='Sin datos';});}),
+        loadReservas().catch(e=>{console.error(e);document.getElementById('res-v').textContent='Sin datos';})
+      ]);
+      setStatus('done','✓ Actualizado · '+new Date().toLocaleString('es-AR'));
+    } catch(e){setStatus('error','✕ Error. Revisá tu conexión.');}
+    btn.disabled=false;btn.textContent='↺ Actualizar';
+  }
+  buildInflGrid();
+  loadAll();
+  setInterval(loadAll,300000);
+</script>
+</body>
+</html>
